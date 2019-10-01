@@ -17,6 +17,7 @@ public class MyIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
+        Log.d(TAG, "onHandleIntent: Mulai.....");
         if (intent != null) {
             long duration = intent.getLongExtra(EXTRA_DURATION, 0);
             try {
